@@ -12,7 +12,7 @@
 
 Firstly, clone the repository. Then, create venv and install `opencv-python`, `numpy` and `ffpyplayer`.
 
-Then, change the DLL_PATH (it's located in the LGHUB\sdks\ folder) if needed.
+Then, change the DLL_PATH (it's located in the LGHUB\sdks\ folder), LOGI_WIDTH and HEIGHT if needed.
 
 The just start the script!
 
