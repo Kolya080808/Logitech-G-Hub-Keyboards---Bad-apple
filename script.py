@@ -92,8 +92,8 @@ def play_bad_apple(video_path, device_code):
     cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
     cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
-    LOGI_WIDTH = 21
-    LOGI_HEIGHT = 6
+    LOGI_WIDTH = 21 # CHANGE THIS 
+    LOGI_HEIGHT = 6 # CHANGE THIS
     EFFECTIVE_WIDTH = 17 if IS_TKL_KEYBOARD else 21
 
     led_dll.LogiLedSetTargetDevice(ctypes.c_int(device_code))
@@ -150,4 +150,5 @@ if __name__ == "__main__":
         print(f"Starting Bad Apple on device {target_device}...")
         play_bad_apple(VIDEO_FILE, target_device)
     else:
+
         print("No keyboard selected. Exiting.")
